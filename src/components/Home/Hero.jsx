@@ -3,12 +3,12 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="bg-white w-fullmd:h-[90vh] mb-8 mt-6 md:mt-0">
+    <div className="bg-white w-fullmd:h-[90vh] mb-48 mt-6 md:mt-0">
       <div className="flex h-full justify-center items-center">
         <div className="md:flex md:justify-between md:max-w-screen-lg">
-          <div className="md:w-[55%] w-full space-y-8 px-8 md:px-0">
+          <div className="md:w-[55%] w-full space-y-10 px-8 md:px-0">
             <div className="space-y-4">
-              <h2 className="font-medium text-5xl md:text-8xl tracking-wid leading-[110%]">
+              <h2 className="font-medium text-5xl md:text-8xl tracking-wide leading-[110%]">
                 Banking starts{" "}
                 <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
                   here.
@@ -119,7 +119,7 @@ export default function Hero() {
               </li>
             </ul>
 
-            <div className=" inline-flex gap-3">
+            <div className=" inline-flex gap-3 md:pt-4">
               <button className="bg-[var(--blue-600)] text-white rounded-md px-5 py-3">
                 Open Account
               </button>
@@ -142,7 +142,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="w-full grid place-content-center mt-10 md:mt-0 md:block md:w-[30%] ">
-            <Image src={"/cards.png"} width={300} height={600} className="w-[200px] md:w-auto" />
+            <Image src={"/cards.png"} alt="cbpay-card" width={300} height={600} className="sm:max-md:w-[200px]" />
           </div>
         </div>
       </div>
