@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Feature2() {
   const payment = [
-    { name: "Apple", brand: "Macbook", price: "$99" },
-    { name: "Xender", brand: "Sharing", price: "$34" },
-    { name: "Dropbox", brand: "Cloud", price: "$76" },
-    { name: "Paypal", brand: "Shopping", price: "$11" },
+    { name: "Apple", brand: "Macbook", price: "₦900" },
+    { name: "Xender", brand: "Sharing", price: "₦340" },
+    { name: "Dropbox", brand: "Cloud", price: "₦799" },
+    { name: "Paypal", brand: "Shopping", price: "₦1200" },
   ];
   return (
     <div className="bg-[var(--blue-500)] flex justify-center z-[-4]">
