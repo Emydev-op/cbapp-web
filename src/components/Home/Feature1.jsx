@@ -8,10 +8,10 @@ export default function Feature1() {
         <div className="md:flex md:justify-between md:max-w-screen-lg">
           <div className="md:w-[54%] w-full space-y-10 px-8 md:px-0">
             <div className="space-y-4">
-              <h2 className="font-medium text-4xl md:text-7xl leading-[110%]">
+              <h2 className="font-medium text-5xl md:text-7xl leading-[110%]">
                 One app.
               </h2>
-              <h2 className="font-medium text-4xl md:text-7xl tracking-wid leading-[110%]">
+              <h2 className="font-medium text-5xl md:text-7xl tracking-wid leading-[110%]">
                 One{" "}
                 <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
                   banking.
@@ -19,8 +19,8 @@ export default function Feature1() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-2 gap-7">
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+            <div className="grid md:grid-cols-2 gap-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -42,7 +42,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Instant transaction
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -51,7 +51,7 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -73,7 +73,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Saving accunts
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -82,7 +82,7 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -104,7 +104,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Mobile banking
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -113,7 +113,7 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -135,7 +135,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Advanced statistics
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -144,7 +144,7 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -166,7 +166,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Virtual cards
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -175,7 +175,7 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className=" space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
                 <svg
                   width="48"
                   height="48"
@@ -197,7 +197,7 @@ export default function Feature1() {
                 </svg>
 
                 <div className="space-y-3">
-                  <h5 className="font-semibold tracking-[-3%] text-xl max-w-8 leading-[120%]">
+                  <h5 className="font-semibold tracking-[-3%] text-xl md:max-w-8 leading-[120%]">
                     Contactless payment
                   </h5>
                   <p className="font-medium text-base trackin leading-[120%]">
@@ -208,7 +208,7 @@ export default function Feature1() {
               </div>
             </div>
           </div>
-          <div className="w-full grid  mt-10 md:mt-0 md:block md:w-[30%] ">
+          <div className="w-full hidden mt-10 md:mt-0 md:block md:w-[30%] ">
             <Image
               src={"/app1.png"}
               alt="cbpay-card"

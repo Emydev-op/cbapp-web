@@ -95,7 +95,7 @@ export default function Feature2() {
           </ul>
         </div>
         <div className="md:mt-0 md:block md:w-[30%] relative">
-          <div className="absolute w-full ">
+          <div className="absolute w-full">
             <div className="flex flex-col gap-3">
               {payment?.map((item) => (
                 <div
