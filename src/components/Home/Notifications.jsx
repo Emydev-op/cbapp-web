@@ -795,8 +795,9 @@ export default function Notifications() {
           duis ut diam.
         </p>
         <img src="/allcards.png" alt="CBPay cards" className="mt-14" />
-        <div className="inline-flex gap-4 mt-14">
-          <button className="px-5 py-2 rounded-md bg-[var(--blue-600)] font-medium text-base text-white">
+
+        <div className="flex gap-4 mt-14 justify-center items-center">
+          <button className="px-5 py-2 rounded-md border-2 border-[var(--blue-600)] bg-[var(--blue-600)] font-medium text-base text-white">
             Open Account
           </button>
           <button className="px-5 py-2 rounded-md border-2 border-[var(--gray-200)] font-medium text-lg text-[var(--black)]">
