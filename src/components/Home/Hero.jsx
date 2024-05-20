@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="bg-white w-fullmd:h-[90vh] mb-48 mt-6 md:mt-0">
+    <div className="bg-white w-fullmd:h-[90vh] mb-48 mt-6">
       <div className="flex h-full justify-center items-center">
         <div className="md:flex md:justify-between md:max-w-screen-lg">
           <div className="md:w-[55%] w-full space-y-10 px-8 md:px-0">
