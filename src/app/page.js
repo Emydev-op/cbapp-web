@@ -1,3 +1,4 @@
+import Faq from "@/components/Home/Faq";
 import Feature1 from "@/components/Home/Feature1";
 import Feature2 from "@/components/Home/Feature2";
 import Feature3 from "@/components/Home/Feature3";
@@ -14,7 +15,8 @@ export default function Home() {
       <Feature2 />
       <Feature3 />
       <Notifications />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Faq />
     </>
   );
 }

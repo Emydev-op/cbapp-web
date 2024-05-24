@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const dM_Sans = DM_Sans({ subsets: ["latin"] });
+const dM_Sans = DM_Sans({ subsets: ["latin-ext"] });
 
 export const metadata = {
   title: "CBPay",
