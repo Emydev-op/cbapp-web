@@ -2,7 +2,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import "aos/dist/aos.css";
 const dM_Sans = DM_Sans({ subsets: ["latin-ext"] });
 
 export const metadata = {

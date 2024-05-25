@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const faqData = [
   {
@@ -37,6 +39,9 @@ const faqData = [
 ];
 
 export default function Faq() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   const [active, setActive] = React.useState(null);
   console.log(active);
   return (
@@ -247,6 +252,8 @@ export default function Faq() {
               <div
                 key={index}
                 className=" border-b border-[var(--gray-100)] pb-8"
+                data-aos="fade-up"
+                data-aos-duration="3000"
               >
                 <h3 className="flex justify-between items-center">
                   {item.title}

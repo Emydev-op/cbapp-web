@@ -1,12 +1,24 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <div className="bg-white w-fullmd:h-[90vh] mb-48 mt-6">
       <div className="flex h-full justify-center items-center">
         <div className="md:flex md:justify-between md:max-w-screen-lg">
-          <div className="md:w-[55%] w-full space-y-10 px-8 md:px-0">
+          <div
+            className="md:w-[55%] w-full space-y-10 px-8 md:px-0"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="space-y-4">
               <h2 className="font-medium text-5xl md:text-8xl tracking-wide leading-[110%]">
                 Banking starts{" "}
@@ -141,8 +153,18 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="w-full grid place-content-center mt-10 md:mt-0 md:block md:w-[30%] ">
-            <Image src={"/cards.png"} alt="cbpay-card" width={300} height={600} className="sm:max-md:w-[200px]" />
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            className="w-full grid place-content-center mt-10 md:mt-0 md:block md:w-[30%] "
+          >
+            <Image
+              src={"/cards.png"}
+              alt="cbpay-card"
+              width={300}
+              height={600}
+              className="sm:max-md:w-[200px]"
+            />
           </div>
         </div>
       </div>
