@@ -161,7 +161,10 @@ export default function Faq() {
               <img src="/googlestore.png" alt="" className="h-[45px] w-auto" />
             </div>
           </div>
-          <div className="flex-1 flex justify-center items-end">
+          <div
+            data-aos="fade-top"
+            className="flex-1 flex justify-center items-end"
+          >
             <Image src="/app2.png" alt="cbpay icon" width={290} height={400} />
           </div>
         </div>

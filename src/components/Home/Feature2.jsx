@@ -23,7 +23,10 @@ export default function Feature2() {
             eiusmod tempor incididunt ut labore et.
           </p>
           <ul className="flex flex-col gap-3">
-            <li className="flex gap-4 text-base items-center">
+            <li
+              data-aos="fade-right"
+              className="flex gap-4 text-base items-center"
+            >
               <svg
                 width="26"
                 height="27"
@@ -45,7 +48,11 @@ export default function Feature2() {
               </svg>
               Malesuada Ipsum
             </li>
-            <li className="flex gap-4 text-base items-center">
+            <li
+              data-aos="fade-right"
+              data-aos-delay="50"
+              className="flex gap-4 text-base items-center"
+            >
               <svg
                 width="26"
                 height="27"
@@ -67,7 +74,11 @@ export default function Feature2() {
               </svg>
               Vestibulum
             </li>
-            <li className="flex gap-4 text-base items-center">
+            <li
+              data-aos="fade-right"
+              data-aos-delay="100"
+              className="flex gap-4 text-base items-center"
+            >
               <svg
                 width="26"
                 height="27"
@@ -96,6 +107,8 @@ export default function Feature2() {
             <div className="flex flex-col gap-3">
               {payment?.map((item) => (
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                   key={item?.brand}
                   className="bg-white rounded-[10px] flex justify-between p-4 items-center"
                 >

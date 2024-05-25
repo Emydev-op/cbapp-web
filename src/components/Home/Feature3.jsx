@@ -38,7 +38,13 @@ export default function Feature3() {
         </div>
         <div className="mt-16">
           <div className=" flex overflow-auto gap-7">
-            <div className="mb-10">
+            <div
+              className="mb-10"
+              data-aos="fade-left"
+              // data-aos-offset="500"
+              data-aos-duration="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="mb-4 size-48 grid place-content-center bg-[var(--blue-500)] rounded-2xl">
                 <svg
                   className="size-12"
@@ -88,7 +94,13 @@ export default function Feature3() {
               </p>
             </div>
 
-            <div className="mb-10">
+            <div
+              className="mb-10"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="mb-4 size-48 grid place-content-center bg-[#f1dfdf] rounded-2xl">
                 <svg
                   className=" size-16"
@@ -146,7 +158,13 @@ export default function Feature3() {
               </p>
             </div>
 
-            <div className="mb-10">
+            <div
+              className="mb-10"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="mb-4 size-48 grid place-content-center bg-[#DFE1F1] rounded-2xl">
                 <svg
                   className=" size-12"
@@ -190,7 +208,13 @@ export default function Feature3() {
               </p>
             </div>
 
-            <div className="mb-10">
+            <div
+              className="mb-10"
+              data-aos="fade-left"
+              data-aos-delay="150"
+              data-aos-duration="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="mb-4 size-48 grid place-content-center bg-[#DFEBF1] rounded-2xl">
                 <svg
                   className="size-12"
@@ -246,7 +270,13 @@ export default function Feature3() {
               </p>
             </div>
 
-            <div className="">
+            <div
+              className=""
+              data-aos-delay="200"
+              data-aos="fade-left"
+              data-aos-duration="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="mb-4 size-48 grid place-content-center bg-[#f8f8f8] rounded-2xl">
                 <svg
                   className="size-10"

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
@@ -20,7 +21,11 @@ export default function Feature1() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-7">
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -51,7 +56,11 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -82,7 +91,11 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -113,7 +126,11 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -144,7 +161,11 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -175,7 +196,11 @@ export default function Feature1() {
                   </p>
                 </div>
               </div>
-              <div className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="space-y-4 border-2 rounded-2xl border-[var(--gray-100)] mr-7 p-7"
+              >
                 <svg
                   width="48"
                   height="48"
@@ -208,7 +233,10 @@ export default function Feature1() {
               </div>
             </div>
           </div>
-          <div className="w-full hidden mt-10 md:mt-0 md:block md:w-[30%] ">
+          <div
+            data-aos="flip-left"
+            className="w-full hidden mt-10 md:mt-0 md:block md:w-[30%] "
+          >
             <Image
               src={"/app1.png"}
               alt="cbpay-card"

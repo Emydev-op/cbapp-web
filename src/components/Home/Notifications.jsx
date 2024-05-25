@@ -28,7 +28,10 @@ export default function Notifications() {
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
               <ul className="grid text-base gap-3">
-                <li className="inline-flex items-center gap-4">
+                <li
+                  data-aos="fade-right"
+                  className="inline-flex items-center gap-4"
+                >
                   <span>
                     <svg
                       width="26"
@@ -52,7 +55,11 @@ export default function Notifications() {
                   </span>
                   Malesuada Ipsum
                 </li>
-                <li className="inline-flex items-center gap-4">
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="50"
+                  className="inline-flex items-center gap-4"
+                >
                   <span>
                     <svg
                       width="26"
@@ -76,7 +83,11 @@ export default function Notifications() {
                   </span>
                   Vestibulum
                 </li>
-                <li className="inline-flex items-center gap-4">
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                  className="inline-flex items-center gap-4"
+                >
                   <span>
                     <svg
                       width="26"
@@ -101,7 +112,11 @@ export default function Notifications() {
                   Parturient Lorem
                 </li>
               </ul>
-              <button className="mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]">
+              <button
+                data-aos="fade-bottom"
+                data-aos-delay="100"
+                className="mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]"
+              >
                 Compare Cards
                 <svg
                   className=" size-6"
@@ -122,8 +137,12 @@ export default function Notifications() {
               {dummyNotification?.map((item, index) => (
                 <li
                   key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                   className="flex gap-4 bg-[var(--gray-200)] p-4 rounded-2xl"
                 >
+                  {" "}
+                  {console.log(index)}
                   <img
                     src="/logo.png"
                     alt="cbpay logo"
@@ -708,7 +727,10 @@ export default function Notifications() {
           </div>
           <div className="mt-16 md:mt-0 flex justify-end items-end">
             <ul className="grid text-base gap-3">
-              <li className="inline-flex items-center gap-4">
+              <li
+                data-aos="fade-right"
+                className="inline-flex items-center gap-4"
+              >
                 <span>
                   <svg
                     width="26"
@@ -732,7 +754,11 @@ export default function Notifications() {
                 </span>
                 Secure and encrypted integration
               </li>
-              <li className="inline-flex items-center gap-4">
+              <li
+                data-aos="fade-right"
+                data-aos-delay="50"
+                className="inline-flex items-center gap-4"
+              >
                 <span>
                   <svg
                     width="26"
@@ -756,7 +782,11 @@ export default function Notifications() {
                 </span>
                 Fully API interface
               </li>
-              <li className="inline-flex items-center gap-4">
+              <li
+                data-aos="fade-right"
+                data-aos-delay="100"
+                className="inline-flex items-center gap-4"
+              >
                 <span>
                   <svg
                     width="26"
