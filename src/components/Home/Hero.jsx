@@ -159,7 +159,7 @@ export default function Hero() {
             className="w-full grid place-content-center mt-10 md:mt-0 md:block md:w-[30%] "
           >
             <Image
-              src={"/cards.png"}
+              src={"/card1.svg"}
               alt="cbpay-card"
               width={300}
               height={600}

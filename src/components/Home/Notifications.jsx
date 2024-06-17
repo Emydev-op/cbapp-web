@@ -12,127 +12,126 @@ export default function Notifications() {
   return (
     <div className="">
       <div className="pt-24 text-[var(--black)] ">
-        <div className="mx-auto md:max-w-screen-lg font-medium md:flex md:justify-between tracking-[-3%] flex ">
-          <div className="md:w-[52%] w-full grid place-content-center">
-            <div className="">
-              <h5 className="text-xl leading-[120%] mb-2">Notifications</h5>
-              <h2 className="text-5xl md:text-6xl mb-4">
-                Stay{" "}
-                <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
-                  notified
-                </span>
-              </h2>
-              <p className="text-lg leading-[180%] mb-8">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-              <ul className="grid text-base gap-3">
-                <li
-                  data-aos="fade-right"
-                  className="inline-flex items-center gap-4"
-                >
-                  <span>
-                    <svg
-                      width="26"
-                      height="27"
-                      viewBox="0 0 26 27"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.643799"
-                        width="26"
-                        height="26"
-                        rx="13"
-                        fill="#E6EEF7"
-                      />
-                      <path
-                        d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
-                        fill="#0054B2"
-                      />
-                    </svg>
-                  </span>
-                  Malesuada Ipsum
-                </li>
-                <li
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  className="inline-flex items-center gap-4"
-                >
-                  <span>
-                    <svg
-                      width="26"
-                      height="27"
-                      viewBox="0 0 26 27"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.643799"
-                        width="26"
-                        height="26"
-                        rx="13"
-                        fill="#E6EEF7"
-                      />
-                      <path
-                        d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
-                        fill="#0054B2"
-                      />
-                    </svg>
-                  </span>
-                  Vestibulum
-                </li>
-                <li
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  className="inline-flex items-center gap-4"
-                >
-                  <span>
-                    <svg
-                      width="26"
-                      height="27"
-                      viewBox="0 0 26 27"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.643799"
-                        width="26"
-                        height="26"
-                        rx="13"
-                        fill="#E6EEF7"
-                      />
-                      <path
-                        d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
-                        fill="#0054B2"
-                      />
-                    </svg>
-                  </span>
-                  Parturient Lorem
-                </li>
-              </ul>
-              <button
-                data-aos="fade-bottom"
-                data-aos-delay="100"
-                className="mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]"
+        <div className="mx-auto md:max-w-screen-lg font-medium md:flex md:justify-between tracking-[-3%] ">
+          <div className="md:w-[52%] w-full px-6 md:px-0 grid place-content-center">
+            <h5 className="text-xl leading-[120%] mb-2">Notifications</h5>
+            <h2 className="text-5xl md:text-6xl mb-4">
+              Stay{" "}
+              <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
+                notified
+              </span>
+            </h2>
+            <p className="text-lg leading-[180%] mb-8">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <ul className="grid text-base gap-3">
+              <li
+                data-aos="fade-right"
+                className="inline-flex items-center gap-4"
               >
-                Compare Cards
-                <svg
-                  className=" size-6"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.2291 11.6515L10.7926 6.33096L12.2257 4.92841L20.1088 12.6434L12.2257 20.3584L10.7926 18.9559L16.2291 13.6353H3.89258V11.6515H16.2291Z"
-                    fill="#0054B2"
-                  />
-                </svg>
-              </button>
-            </div>
+                <span>
+                  <svg
+                    width="26"
+                    height="27"
+                    viewBox="0 0 26 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.643799"
+                      width="26"
+                      height="26"
+                      rx="13"
+                      fill="#E6EEF7"
+                    />
+                    <path
+                      d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
+                      fill="#0054B2"
+                    />
+                  </svg>
+                </span>
+                Malesuada Ipsum
+              </li>
+              <li
+                data-aos="fade-right"
+                data-aos-delay="50"
+                className="inline-flex items-center gap-4"
+              >
+                <span>
+                  <svg
+                    width="26"
+                    height="27"
+                    viewBox="0 0 26 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.643799"
+                      width="26"
+                      height="26"
+                      rx="13"
+                      fill="#E6EEF7"
+                    />
+                    <path
+                      d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
+                      fill="#0054B2"
+                    />
+                  </svg>
+                </span>
+                Vestibulum
+              </li>
+              <li
+                data-aos="fade-right"
+                data-aos-delay="100"
+                className="inline-flex items-center gap-4"
+              >
+                <span>
+                  <svg
+                    width="26"
+                    height="27"
+                    viewBox="0 0 26 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.643799"
+                      width="26"
+                      height="26"
+                      rx="13"
+                      fill="#E6EEF7"
+                    />
+                    <path
+                      d="M11.4996 16.0227L18.3936 9.12793L19.4548 10.1884L11.4996 18.1437L6.72656 13.3707L7.78706 12.3102L11.4996 16.0227Z"
+                      fill="#0054B2"
+                    />
+                  </svg>
+                </span>
+                Parturient Lorem
+              </li>
+            </ul>
+            <button
+              data-aos="fade-bottom"
+              data-aos-delay="100"
+              className="ml-auto mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]"
+            >
+              Compare Cards
+              <svg
+                className=" size-6"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2291 11.6515L10.7926 6.33096L12.2257 4.92841L20.1088 12.6434L12.2257 20.3584L10.7926 18.9559L16.2291 13.6353H3.89258V11.6515H16.2291Z"
+                  fill="#0054B2"
+                />
+              </svg>
+            </button>
           </div>
-          <div className="mt-16 md:mt-0">
+
+          <div className="mt-16 md:mt-0 mx-4">
             <ul className="grid gap-4">
               {dummyNotification?.map((item, index) => (
                 <li
@@ -141,8 +140,6 @@ export default function Notifications() {
                   data-aos-duration="3000"
                   className="flex gap-4 bg-[var(--gray-200)] p-4 rounded-2xl"
                 >
-                  {" "}
-                  {console.log(index)}
                   <img
                     src="/logo.png"
                     alt="cbpay logo"
@@ -824,7 +821,7 @@ export default function Notifications() {
           Senectus et netus et malesuada fames ac turpis. Sagittis vitae et leo
           duis ut diam.
         </p>
-        <img src="/allcards.png" alt="CBPay cards" className="mt-14" />
+        <img src="/cards.svg" alt="CBPay cards" className="mt-14" />
 
         <div className="flex gap-4 mt-14 justify-center items-center">
           <button className="px-5 py-2 rounded-md border-2 border-[var(--blue-600)] bg-[var(--blue-600)] font-medium text-base text-white">

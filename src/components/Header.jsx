@@ -16,8 +16,8 @@ export default function Header() {
 
   return (
     <nav
-      className={`py-6 z-10 transition-all bg-white ${
-        !top && `shadow top-0 sticky`
+      className={`py-6 z-10 transition-all bg-white top-0 sticky ${
+        !top && `shadow`
       }`}
     >
       <div className="flex justify-between max-w-[90%] mx-auto">

@@ -11,7 +11,7 @@ export default function Feature2() {
   return (
     <div className="bg-[var(--blue-500)] flex justify-center z-[-4]">
       <div className="sm:max-md:px-8 pt-28 mb-16 md:mb-24 md:flex md:justify-between md:max-w-screen-lg">
-        <div className="md:w-[54%] w-full space-y-10">
+        <div className="md:w-[54%] w-full space-y-10 mx-6 md:mx-0 ">
           <h2 className="font-md text-5xl md:text-6xl">
             Send & receive money{" "}
             <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
@@ -104,7 +104,7 @@ export default function Feature2() {
         </div>
         <div className="mt-16 md:mt-0 md:w-[30%] relative">
           <div className=" w-full">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 w-11/12 md:w-full mx-auto md:mx-o">
               {payment?.map((item) => (
                 <div
                   data-aos="fade-up"

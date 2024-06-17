@@ -238,7 +238,7 @@ export default function Feature1() {
             className="w-full hidden mt-10 md:mt-0 md:block md:w-[30%] "
           >
             <Image
-              src={"/app1.png"}
+              src={"/app1.svg"}
               alt="cbpay-card"
               width={300}
               height={600}

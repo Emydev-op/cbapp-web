@@ -43,7 +43,6 @@ export default function Faq() {
     AOS.init({});
   }, []);
   const [active, setActive] = React.useState(null);
-  console.log(active);
   return (
     <div className="mt-24 text-[var(--black)] ">
       <div className="mx-auto md:max-w-screen-lg font-medium tracking-[-3%]">
@@ -157,15 +156,15 @@ export default function Faq() {
             </ul>
 
             <div className="inline-flex gap-4 pt-6">
-              <img src="/applestore.png" alt="" className="h-[45px] w-auto" />
-              <img src="/googlestore.png" alt="" className="h-[45px] w-auto" />
+              <img src="/applestore.svg" alt="" className="h-[45px] w-auto" />
+              <img src="/googlestore.svg" alt="" className="h-[45px] w-auto" />
             </div>
           </div>
           <div
             data-aos="fade-top"
             className="flex-1 flex justify-center items-end"
           >
-            <Image src="/app2.png" alt="cbpay icon" width={290} height={400} />
+            <Image src="/app2.svg" alt="cbpay icon" width={290} height={400} />
           </div>
         </div>
 

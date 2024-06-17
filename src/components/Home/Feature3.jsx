@@ -4,8 +4,8 @@ export default function Feature3() {
   return (
     <div className="mt-24 text-[var(--black)] ">
       <div className="mx-auto md:max-w-screen-lg font-medium tracking-[-3%]">
-        <div className="flex">
-          <div className="w-[58%]">
+        <div className="md:flex">
+          <div className="md:w-[58%] w-full px-6">
             <h5 className="mb-2 text-xl">Saving Accounts</h5>
             <h2 className="mb-6 font-medium text-5xl md:text-6xl tracking-[-3%]">
               Organize your money the{" "}
@@ -18,7 +18,7 @@ export default function Feature3() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="inline-flex flex-1 justify-end items-end">
+          <div className="flex flex-1 justify-end items-end mt-6 md:mt-0 mr-6 md:mr-0">
             <span className="inline-flex gap-2 font-medium text-lg text-[var(--blue-600)] place-content-start">
               All Features
               <svg
@@ -36,18 +36,17 @@ export default function Feature3() {
             </span>
           </div>
         </div>
-        <div className="mt-16">
+        <div className="mt-16 ml-6 md:ml-0">
           <div className=" flex overflow-auto gap-7">
             <div
               className="mb-10"
               data-aos="fade-left"
-              // data-aos-offset="500"
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-48 grid place-content-center bg-[var(--blue-500)] rounded-2xl">
+              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[var(--blue-500)] rounded-2xl">
                 <svg
-                  className="size-12"
+                  className="size-10 md:size-12"
                   viewBox="0 0 64 65"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,9 +100,9 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-48 grid place-content-center bg-[#f1dfdf] rounded-2xl">
+              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#f1dfdf] rounded-2xl">
                 <svg
-                  className=" size-16"
+                  className="size-14 md:size-16"
                   viewBox="0 0 72 73"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +164,9 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-48 grid place-content-center bg-[#DFE1F1] rounded-2xl">
+              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#DFE1F1] rounded-2xl">
                 <svg
-                  className=" size-12"
+                  className="size-10 md:size-12"
                   viewBox="0 0 56 57"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -215,9 +214,9 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-48 grid place-content-center bg-[#DFEBF1] rounded-2xl">
+              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#DFEBF1] rounded-2xl">
                 <svg
-                  className="size-12"
+                  className="size-10 md:size-12"
                   viewBox="0 0 54 55"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -277,9 +276,9 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-48 grid place-content-center bg-[#f8f8f8] rounded-2xl">
+              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#f8f8f8] rounded-2xl">
                 <svg
-                  className="size-10"
+                  className="size-8 md:size-10"
                   viewBox="0 0 40 41"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
