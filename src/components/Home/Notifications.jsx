@@ -114,7 +114,7 @@ export default function Notifications() {
             <button
               data-aos="fade-bottom"
               data-aos-delay="100"
-              className="ml-auto mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]"
+              className="ml-auto md:ml-0 mt-12 text-lg font-medium inline-flex gap-2 items-center text-[var(--blue-600)]"
             >
               Compare Cards
               <svg

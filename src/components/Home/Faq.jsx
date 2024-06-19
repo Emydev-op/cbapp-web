@@ -46,8 +46,8 @@ export default function Faq() {
   return (
     <div className="mt-24 text-[var(--black)] ">
       <div className="mx-auto md:max-w-screen-lg font-medium tracking-[-3%]">
-        <div className="bg-[var(--blue-600)] rounded-[20px] pt-16 px-16 flex justify-between">
-          <div className="w-[58%] mb-16 text-white space-y-4">
+        <div className="relative bg-[var(--blue-600)] md:rounded-[20px] pt-16 px-6 md:px-16 md:flex justify-between">
+          <div className="w-full md:w-[58%] mb-16 text-white space-y-4">
             <div className="space-y-4">
               <h2 className="font-medium text-4xl md:text-6xl leading-[110%]">
                 One app.
@@ -162,14 +162,14 @@ export default function Faq() {
           </div>
           <div
             data-aos="fade-top"
-            className="flex-1 flex justify-center items-end"
+            className="flex-1 flex justify-center items-end "
           >
             <Image src="/app2.svg" alt="cbpay icon" width={290} height={400} />
           </div>
         </div>
 
         {/* Need help */}
-        <div className="grid grid-cols-2 my-40">
+        <div className="grid grid-col-1 md:grid-cols-2 my-40 mx-6 md:mx-0">
           <div className="space-y-12">
             <h2 className="font-medium text-4xl md:text-6xl leading-[110%]">
               Need help?
@@ -177,7 +177,7 @@ export default function Faq() {
             <div className="grid space-y-8">
               <div className="inline-flex gap-6 font-medium items-center">
                 <svg
-                  className="size-12"
+                  className="md:size-12 size-10"
                   viewBox="0 0 50 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@ export default function Faq() {
               </div>
               <div className="inline-flex gap-6 items-center">
                 <svg
-                  className="size-12"
+                  className="size-10 md:size-12"
                   viewBox="0 0 50 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@ export default function Faq() {
               </svg>
             </Link>
           </div>
-          <div className="space-y-8 font-medium">
+          <div className="space-y-8 font-medium mt-12">
             {faqData.map((item, index) => (
               <div
                 key={index}
@@ -257,16 +257,18 @@ export default function Faq() {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                <h3 className="flex justify-between items-center">
+                <h3
+                  onClick={() => {
+                    if (item.id === active) {
+                      setActive(null);
+                    } else {
+                      setActive(item.id);
+                    }
+                  }}
+                  className="flex justify-between items-center"
+                >
                   {item.title}
                   <svg
-                    onClick={() => {
-                      if (item.id === active) {
-                        setActive(null);
-                      } else {
-                        setActive(item.id);
-                      }
-                    }}
                     className={`size-6 cursor-pointer transition-all ease-in-out ${
                       item.id === active && "rotate-45"
                     }`}
@@ -281,8 +283,8 @@ export default function Faq() {
                   </svg>
                 </h3>
                 <p
-                  className={`mt-4 text-[var(--black)] opacity-50  transition-all ease-out ${
-                    item.id !== active ? "hidden" : "block"
+                  className={`mt-4 text-[var(--black)] opacity-50 transition-all ease-in-out ${
+                    item.id !== active && " hidden opacity-0"
                   }`}
                 >
                   {item.message}

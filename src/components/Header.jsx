@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 export default function Header() {
   const [top, setTop] = React.useState(true);
+  const pathName = usePathname();
 
   React.useEffect(() => {
     const scrollHandler = () => {
@@ -12,7 +14,7 @@ export default function Header() {
     };
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
+  }, [top]); 
 
   return (
     <nav
@@ -29,12 +31,24 @@ export default function Header() {
         </Link>
         <div className="hidden md:block">
           <ul className="flex space-x-4 text-lg font-medium">
-            <li className="bg-[var(--gray-200)] px-3 py-2 rounded-md">
+            <li
+              className={`${
+                pathName === "/features"
+                  ? " bg-[var(--gray-200)]"
+                  : "hover:bg-[var(--gray-200)]"
+              } px-3 py-2 rounded-md`}
+            >
               <Link href="features" className="text-[#1A191E]">
                 Featues
               </Link>
             </li>
-            <li className="bg-[var(--gray-200)] px-3 py-2 rounded-md">
+            <li
+              className={`${
+                pathName === "/compare"
+                  ? " bg-[var(--gray-200)]"
+                  : "hover:bg-[var(--gray-200)]"
+              } px-3 py-2 rounded-md`}
+            >
               <Link
                 href="compare"
                 className="text-[#1A191E] flex gap-1 items-center"
@@ -56,12 +70,24 @@ export default function Header() {
                 </span>
               </Link>
             </li>
-            <li className="bg-[var(--gray-200)] px-3 py-2 rounded-md">
+            <li
+              className={`${
+                pathName === "/support"
+                  ? "bg-[var(--gray-200)] "
+                  : "hover:bg-[var(--gray-200)]"
+              } px-3 py-2 rounded-md`}
+            >
               <Link href="support" className="text-[#1A191E]">
                 Support
               </Link>
             </li>
-            <li className="bg-[var(--gray-200)] px-3 py-2 rounded-md">
+            <li
+              className={`${
+                pathName === "/blog"
+                  ? " bg-[var(--gray-200)]"
+                  : "hover:bg-[var(--gray-200)]"
+              } px-3 py-2 rounded-md`}
+            >
               <Link
                 href="blog"
                 className="text-[#1A191E] flex gap-1 items-center"
