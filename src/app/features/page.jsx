@@ -1,6 +1,7 @@
 "use client";
 import Hero from "@/components/Feature/Hero";
 import AOS from "aos";
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 export default function FeaturePage() {
@@ -13,6 +14,7 @@ export default function FeaturePage() {
     <main className="z-[5]">
       {/* Hero */}
       <Hero />
+      {/* Main Feature */}
       <div className="pt-32 bg-white">
         <div className="md:flex md:justify-between max-w-screen-lg  mx-auto">
           <div className="md:w-[52%] w-full px-6 md:px-0 grid place-content-center">
@@ -225,8 +227,8 @@ export default function FeaturePage() {
           </div>
         </div>
       </div>
-      <div className="pt-32 bg-white">
-        <div className="md:flex md:justify-between max-w-screen-lg  mx-auto">
+      <div className="pt-32 pb-24 bg-white">
+        <div className="md:flex md:justify-between max-w-screen-lg mx-auto">
           <div className="md:w-[52%] w-full px-6 md:px-0 grid place-content-center">
             <h5 className="text-xl leading-[120%] mb-2">Advanced Statistics</h5>
             <h2 className="text-5xl md:text-6xl mb-4">
@@ -331,6 +333,77 @@ export default function FeaturePage() {
           </div>
         </div>
       </div>
+      {/* Section 2 */}
+      <section className="mt-8 mb-16 text-center">
+        <div className="text-center inline-flex flex-col mb-14">
+          <h2 className="text-5xl md:text-6xl mb-4">
+            All in one bank.
+            <span className="bg-gradient-to-r blur-xs from-blue-500 via-teal-500 to-orange-500 bg-clip-text text-transparent text-center select-none">
+              Really.
+            </span>
+          </h2>
+          <p className="text-lg leading-[180%] mb-8 md:max-w-md mx-auto">
+            Senectus et netus et malesuada fames ac turpis. Sagittis vitae et
+            leo duis ut diam.
+          </p>
+        </div>
+        <div className="max-w-screen-lg mx-auto">
+          <div className="grid grid-cols-2 gap-8 mb-8">
+            <Image
+              src="/features/statistic.svg"
+              alt="statistics"
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+            <Image
+              src="/features/cards.svg"
+              alt="cards"
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+          </div>
+          <div className="grid grid-cols-3 gap-8">
+            <Image
+              src="/features/integration.svg"
+              alt="easy integration"
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+            <Image
+              src="/features/savings.svg"
+              alt="savings accounts"
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+            <Image
+              src="/features/transaction.svg"
+              alt="instant transactions"
+              width={1920}
+              height={1080}
+              layout="responsive"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="text-center pt-14">
+        <div className="text-center inline-flex flex-col mb-14">
+          <h5 className="text-xl leading-[120%] mb-2">Accounts</h5>
+          <h2 className="text-5xl md:text-6xl mb-4">Choose your card.</h2>
+          <p className="text-lg leading-[180%] mb-8 md:max-w-md mx-auto">
+            Senectus et netus et malesuada fames ac turpis. Sagittis vitae et
+            leo duis ut diam.
+          </p>
+        </div>
+        <div className="max-w-screen-lg gap-16 grid grid-cols-3">
+          <div className=""></div>
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+      </section>
     </main>
   );
 }

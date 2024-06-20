@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Feature1() {
   return (
-    <div className="bg-white w-full md:h-[90vh] mb-28 mt-6 md:mt-0">
+    <div className="bg-white mb-28 mt-6 md:mt-0">
       <div className="flex h-full justify-center items-center">
         <div className="md:flex md:justify-between md:max-w-screen-lg">
           <div className="md:w-[54%] w-full space-y-10 px-8 md:px-0">
