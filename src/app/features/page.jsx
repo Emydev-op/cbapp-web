@@ -1,5 +1,6 @@
 "use client";
 import Hero from "@/components/Feature/Hero";
+import Faq from "@/components/Home/Faq";
 import AOS from "aos";
 import Image from "next/image";
 import React, { useEffect } from "react";
@@ -482,6 +483,7 @@ export default function FeaturePage() {
           </div>
         </div>
       </section>
+      <Faq/>
     </main>
   );
 }
