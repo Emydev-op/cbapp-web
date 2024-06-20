@@ -1,6 +1,5 @@
 "use client";
 import AOS from "aos";
-import Image from "next/image";
 import React, { useEffect } from "react";
 
 export default function Support() {
