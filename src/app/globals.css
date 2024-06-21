@@ -8,7 +8,8 @@
   --gray-200: #f8f8f8;
   --gray-100: #e8e8e8;
   --white: #fafafa;
-  --black: #1A191E 
+  --black: #1A191E;
+  --input-text: #919499;
 }
 
 /* @media (prefers-color-scheme: dark) {
