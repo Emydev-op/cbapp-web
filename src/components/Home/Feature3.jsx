@@ -44,7 +44,7 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[var(--blue-500)] rounded-2xl">
+              <div className="mb-4 size-40 md:size-44 grid place-content-center bg-[var(--blue-500)] rounded-2xl">
                 <svg
                   className="size-10 md:size-12"
                   viewBox="0 0 64 65"
@@ -100,7 +100,7 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#f1dfdf] rounded-2xl">
+              <div className="mb-4 size-40 md:size-44 grid place-content-center bg-[#f1dfdf] rounded-2xl">
                 <svg
                   className="size-14 md:size-16"
                   viewBox="0 0 72 73"
@@ -164,7 +164,7 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#DFE1F1] rounded-2xl">
+              <div className="mb-4 size-40 md:size-44 grid place-content-center bg-[#DFE1F1] rounded-2xl">
                 <svg
                   className="size-10 md:size-12"
                   viewBox="0 0 56 57"
@@ -214,7 +214,7 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#DFEBF1] rounded-2xl">
+              <div className="mb-4 size-40 md:size-44 grid place-content-center bg-[#DFEBF1] rounded-2xl">
                 <svg
                   className="size-10 md:size-12"
                   viewBox="0 0 54 55"
@@ -276,7 +276,7 @@ export default function Feature3() {
               data-aos-duration="300"
               data-aos-easing="ease-in-sine"
             >
-              <div className="mb-4 size-40 md:size-48 grid place-content-center bg-[#f8f8f8] rounded-2xl">
+              <div className="mb-4 size-40 md:size-44 grid place-content-center bg-[#f8f8f8] rounded-2xl">
                 <svg
                   className="size-8 md:size-10"
                   viewBox="0 0 40 41"

@@ -14,7 +14,7 @@ export default function Header() {
     };
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]); 
+  }, [top]);
 
   return (
     <nav
@@ -112,12 +112,16 @@ export default function Header() {
           </ul>
         </div>
         <div className="space-x-8 place-content-center hidden md:block">
-          <button className="font-bold text-[var(--blue-600)] text-xl p-2">
-            Login
-          </button>
-          <button className="bg-[var(--blue-600)] text-white text-base font-normal px-4 py-3 rounded-md">
-            Open Account
-          </button>
+          <Link href="login">
+            <button className="font-bold text-[var(--blue-600)] text-xl p-2">
+              Login
+            </button>
+          </Link>
+          <Link href="new-account">
+            <button className="bg-[var(--blue-600)] text-white text-base font-normal px-4 py-3 rounded-md">
+              Open Account
+            </button>
+          </Link>
         </div>
         {/* Mobile level */}
         <div className=" md:hidden">
