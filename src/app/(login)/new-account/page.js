@@ -2,24 +2,88 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-export default function Login() {
+export default function NewAccount() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="w-full h-full flex overflow-y-auto">
       <div className="bg-white w-[55%]">
         <div className="mt-10 w-3/4 mx-auto">
           <h2 className="font-bold text-3xl text-[var(--blue-600)]">
-            Hi, Welcome Back Fellas!
+            Get started
           </h2>
 
-          <form className="mt-10 space-y-6 font-medium text-[var(--input-text)]">
-            <div className="">
-              <label className="text-sm">Email or username</label>
+          <form className="mt-8 gap-y-6 gap-x-6 grid grid-cols-2 font-medium text-[var(--input-text)]">
+            <div className=" col-span-2">
+              <label className="text-sm">Full Name</label>
               <input
                 type="text"
-                placeholder="Email or username"
+                placeholder="Full Name"
                 className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
               />
+            </div>
+            <div className=" col-span-2">
+              <label className="text-sm">Email Address</label>
+              <input
+                type="text"
+                placeholder="Email Address"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className="">
+              <label className="text-sm">Birth Date</label>
+              <input
+                type="date"
+                placeholder="Birth Date"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className="">
+              <label className="text-sm">Phone Number</label>
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className="">
+              <label className="text-sm">Province</label>
+              <input
+                type="text"
+                placeholder="Province"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className="">
+              <label className="text-sm">City</label>
+              <input
+                type="text"
+                placeholder="City"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className=" col-span-2">
+              <label className="text-sm">Full Address</label>
+              <textarea
+                type="text"
+                placeholder="Full Address"
+                className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+              />
+            </div>
+            <div className="">
+              <label className="text-sm">Password</label>
+              <div className="relative  mt-4">
+                <span
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute h-full grid place-content-center px-5 z-[1] cursor-pointer right-0"
+                >
+                  <img src="/eye.svg" alt="see password" />
+                </span>
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  className="outline-none border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
+                />
+              </div>
             </div>
             <div className="">
               <label className="text-sm">Password</label>
@@ -40,7 +104,8 @@ export default function Login() {
                 />
               </div>
             </div>
-            <div>
+
+            <div className="col-span-2">
               <button
                 type="submit"
                 className="bg-[var(--blue-600)] text-white hover:opacity-95 w-full rounded-[14px] py-3 mt-4"
@@ -49,7 +114,7 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div className="">
+          <div>
             <div className="flex items-center text-[var(--input-text)] justify-between my-7">
               <span class="border-b-[1.3px] flex-1" />
               <p className="mx-auto px-10 text-center w-fit text-sm">
