@@ -1,9 +1,14 @@
 "use client";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function NewAccount() {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push("/login")
+  };
   return (
     <div className="w-full h-full flex overflow-y-auto">
       <div className="bg-white w-[55%]">
@@ -12,19 +17,28 @@ export default function NewAccount() {
             Get started
           </h2>
 
-          <form className="mt-8 gap-y-6 gap-x-6 grid grid-cols-2 font-medium text-[var(--input-text)]">
+          <form
+            onSubmit={handleSubmit}
+            className="mt-8 pb-12 gap-y-6 gap-x-6 grid grid-cols-2 font-medium text-[var(--input-text)]"
+          >
             <div className=" col-span-2">
-              <label className="text-sm">Full Name</label>
+              <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                Full Name
+              </label>
               <input
                 type="text"
+                required
                 placeholder="Full Name"
                 className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
               />
             </div>
             <div className=" col-span-2">
-              <label className="text-sm">Email Address</label>
+              <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                Email Address
+              </label>
               <input
                 type="text"
+                required
                 placeholder="Email Address"
                 className="outline-none mt-4 border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
               />
@@ -70,36 +84,39 @@ export default function NewAccount() {
               />
             </div>
             <div className="">
-              <label className="text-sm">Password</label>
+              <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                Password
+              </label>
               <div className="relative  mt-4">
-                <span
+                {/* <span
                   onClick={() => setShowPassword((prev) => !prev)}
                   className="absolute h-full grid place-content-center px-5 z-[1] cursor-pointer right-0"
                 >
                   <img src="/eye.svg" alt="see password" />
-                </span>
+                </span> */}
                 <input
                   type={showPassword ? "text" : "password"}
                   placeholder="Password"
+                  required
                   className="outline-none border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
                 />
               </div>
             </div>
             <div className="">
-              <label className="text-sm">Password</label>
-              <p className="text-sm text-[var(--blue-600)] cursor-pointer float-right">
-                Forgot Password?
-              </p>
+              <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                Confirm Password
+              </label>
               <div className="relative  mt-4">
-                <span
+                {/* <span
                   onClick={() => setShowPassword((prev) => !prev)}
                   className="absolute h-full grid place-content-center px-5 z-[1] cursor-pointer right-0"
                 >
                   <img src="/eye.svg" alt="see password" />
-                </span>
+                </span> */}
                 <input
                   type={showPassword ? "text" : "password"}
-                  placeholder="Password"
+                  required
+                  placeholder="Confirm Password"
                   className="outline-none border-2 text-gray-800 rounded-[14px] w-full px-6 py-3"
                 />
               </div>
@@ -110,28 +127,10 @@ export default function NewAccount() {
                 type="submit"
                 className="bg-[var(--blue-600)] text-white hover:opacity-95 w-full rounded-[14px] py-3 mt-4"
               >
-                Sign In
+                Sign Up
               </button>
             </div>
           </form>
-          <div>
-            <div className="flex items-center text-[var(--input-text)] justify-between my-7">
-              <span class="border-b-[1.3px] flex-1" />
-              <p className="mx-auto px-10 text-center w-fit text-sm">
-                Or sign in with
-              </p>
-              <span class="border-b-[1.3px] flex-1" />
-            </div>
-            <button className="border-[#c4c4c4] text-opacity-50 hover:text-opacity-100 border-[1.5px] text-[#787878] font-semibold w-full rounded-[14px] py-3 mb-5">
-              Another Method
-            </button>
-            <p className="text-sm font-medium text-center text-[#c4c4c4] mb-6">
-              You don’t Have an Account?{" "}
-              <Link href="#" className="text-[var(--blue-600)]">
-                Sign Up
-              </Link>
-            </p>
-          </div>
         </div>
       </div>
       <div className="w-[45%] overflow-y-hidden h-full text-white bg-gradient-to-r sticky top-0 right-0 from-[#0042A3] to-[#0055B2]">

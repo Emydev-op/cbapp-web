@@ -1,9 +1,16 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push("/ibank");
+  };
+
   return (
     <div className="w-full h-full flex overflow-y-auto">
       <div className="bg-white w-[55%]">
@@ -12,7 +19,7 @@ export default function Login() {
             Hi, Welcome Back Fellas!
           </h2>
 
-          <form className="mt-10 space-y-6 font-medium text-[var(--input-text)]">
+          <form onSubmit={handleSubmit} className="mt-10 space-y-6 font-medium text-[var(--input-text)]">
             <div className="">
               <label className="text-sm">Email or username</label>
               <input
