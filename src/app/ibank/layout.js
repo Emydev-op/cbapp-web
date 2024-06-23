@@ -1,13 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function UserLayout({ children }) {
+  const pathName = usePathname();
   return (
     <div className="bg-[#f8f8f8] absolute top-0 bottom-0 right-0 left-0 z-20">
-      <div className="flex border w-full h-full">
-        <div className="bg-white h-full w-[260px] font-semibold text-sm">
-          <div className="mt-8 grid place-content-center">
+      <div className="flex border w-full h-full overflow-y-hidden">
+        <div className="bg-white h-screen w-[260px] flex flex-col font-semibold text-sm">
+          <div className="mt-8 grid place-content-center ">
             <Link
               href="/ibank"
               className="text-2xl text-[var(--blue-600)] font-semibold inline-flex gap-x-2"
@@ -22,16 +25,24 @@ export default function UserLayout({ children }) {
               CBPay
             </Link>
           </div>
-          <div className="mt-8 overflow-y-auto px-6 ">
+          <div className="mt-8 overflow-y-auto px-6 h-full dashboard-side">
             <section className="text-[#C4C4C4]">
               <h2 className="text-[var(--blue-600)] py-[15px]">General</h2>
               {/*Routes*/}
               <Link
-                href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                href="/ibank"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group ${
+                  pathName === "/ibank"
+                    ? "text-[var(--yellow)]"
+                    : " hover:text-[var(--yellow)]"
+                } `}
               >
                 <svg
-                  className="size-[21px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
+                  className={`size-[21px] fill-[#C4C4C4] ${
+                    pathName === "/ibank"
+                      ? "fill-[var(--yellow)]"
+                      : "group-hover:fill-[var(--yellow)]"
+                  }`}
                   viewBox="0 0 21 21"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +58,7 @@ export default function UserLayout({ children }) {
               </Link>
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
                   className="size-6 fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
@@ -66,7 +77,7 @@ export default function UserLayout({ children }) {
               </Link>
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
                   className="size-[22px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
@@ -85,10 +96,14 @@ export default function UserLayout({ children }) {
               </Link>
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
-                  className="size-[21px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
+                  className={`size-[21px] fill-[#C4C4C4] ${
+                    pathName === "/"
+                      ? "fill-[var(--yellow)]"
+                      : "group-hover:fill-[var(--yellow)]"
+                  }`}
                   viewBox="0 0 21 21"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,10 +119,14 @@ export default function UserLayout({ children }) {
               </Link>
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
-                  className="size-[21px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
+                  className={`size-[21px] fill-[#C4C4C4] ${
+                    pathName === "/"
+                      ? "fill-[var(--yellow)]"
+                      : "group-hover:fill-[var(--yellow)]"
+                  }`}
                   viewBox="0 0 21 21"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -128,10 +147,10 @@ export default function UserLayout({ children }) {
               {/*Routes*/}
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
-                  className="size-[25px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
+                  className="size-[24px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
                   viewBox="0 0 25 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +166,7 @@ export default function UserLayout({ children }) {
               </Link>
               <Link
                 href="#"
-                className="flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]"
+                className={`flex gap-4 py-[15px] pl-3 items-center hover:bg-neutral-50 rounded-2xl group hover:text-[var(--yellow)]`}
               >
                 <svg
                   className="size-[22px] fill-[#C4C4C4] group-hover:fill-[var(--yellow)]"
@@ -186,7 +205,7 @@ export default function UserLayout({ children }) {
             </section>
           </div>
         </div>
-        <div className="h-full w-full overflow-y-auto">{children}</div>
+        <div className="h-screen w-full overflow-y-auto">{children}</div>
       </div>
     </div>
   );
