@@ -6,10 +6,16 @@ import Footer from "../Footer";
 
 export default function RootLayout({ children }) {
   const pathName = usePathname();
-  if (pathName === "/") return <Header />;
-  {
-    children;
+
+  if (pathName === "/ibank") {
+    return children;
   }
-  <Footer />;
-  return children;
+
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }
