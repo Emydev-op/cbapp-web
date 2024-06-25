@@ -16,9 +16,6 @@ export default function MainLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="./favicon.png" sizes="any" />
       <body className={dM_Sans.className}>
-        {/* <Header />
-        {children}
-        <Footer /> */}
         <RootLayout>{children}</RootLayout>
       </body>
     </html>
